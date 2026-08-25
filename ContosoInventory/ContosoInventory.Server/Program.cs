@@ -100,6 +100,7 @@ builder.Services.AddAntiforgery();
 
 // 9. Application services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
